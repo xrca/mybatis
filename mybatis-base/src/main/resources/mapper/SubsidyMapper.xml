@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+    PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+    "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.xrca.mapper.SubsidyMapper">
+    <select id="selectById" resultType="com.xrca.entity.Subsidy">
+        select * from subsidy where record_id = #{recordId}
+    </select>
+</mapper>
