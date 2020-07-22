@@ -27,4 +27,14 @@ public class MybatisBaseTest {
         Subsidy subsidy = subsidyMapper.selectById(10086L);
         System.out.println(subsidy);
     }
+
+    @Test
+    public void testSelectById2() throws Exception {
+        String resource = "mybatis-config.xml";
+        InputStream inputStream = Resources.getResourceAsStream(resource);
+        SqlSessionFactory sqlSessionFactory = new SqlSessionFactoryBuilder().build(inputStream);
+        SqlSession sqlSession = sqlSessionFactory.openSession();
+        Subsidy subsidy = sqlSession.selectOne("com.xrca.mapper.SubsidyMapper.selectById", 10010L);
+        System.out.println(subsidy);
+    }
 }
