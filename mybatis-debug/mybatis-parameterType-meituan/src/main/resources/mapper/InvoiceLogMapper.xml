@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.xrca.mapper.InvoiceLogMapper">
+    <select id="selectById" resultType="com.xrca.entity.InvoiceLog">
+        select * from invoice_log where id = #{id}
+    </select>
+
+    <update id="updateResponse" parameterType="java.lang.String">
+        UPDATE invoice_log
+        SET response = #{response}, update_time = #{updateTime}
+        WHERE id = #{id}
+    </update>
+
+    <!-- 去除parameterType，让mybatis自动识别类型 -->
+    <update id="updateResponse2" >
+        UPDATE invoice_log
+        SET response = #{response}, update_time = #{updateTime}
+        WHERE id = #{id}
+    </update>
+</mapper>

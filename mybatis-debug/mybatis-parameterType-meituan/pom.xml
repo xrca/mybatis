@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>mybatis-debug</artifactId>
+        <groupId>com.xrca</groupId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>mybatis-parameterType-meituan</artifactId>
+
+    <description>
+        此模块主要复现美团技术论坛上一篇《MyBatis版本升级引发的线上告警回顾及原理分析》(https://tech.meituan.com/2020/06/18/inf-bom-mybatis.html)文章中出现的问题，
+        并进行相关探究
+    </description>
+
+
+    <dependencies>
+        <!-- mybatis 3.2.4 -->
+        <dependency>
+            <groupId>org.mybatis</groupId>
+            <artifactId>mybatis</artifactId>
+            <version>3.2.4</version>
+        </dependency>
+
+        <!-- mybatis 3.2.3 -->
+        <!--<dependency>
+            <groupId>org.mybatis</groupId>
+            <artifactId>mybatis</artifactId>
+            <version>3.2.3</version>
+        </dependency>-->
+    </dependencies>
+</project>
