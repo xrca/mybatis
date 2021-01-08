@@ -11,6 +11,7 @@
     <modules>
         <module>mybatis-base</module>
         <module>mybatis-debug</module>
+        <module>mybatis-cache</module>
     </modules>
 
     <properties>

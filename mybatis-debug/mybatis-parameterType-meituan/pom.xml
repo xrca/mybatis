@@ -19,11 +19,11 @@
 
     <dependencies>
         <!-- mybatis 3.2.4 -->
-        <dependency>
+        <!--<dependency>
             <groupId>org.mybatis</groupId>
             <artifactId>mybatis</artifactId>
             <version>3.2.4</version>
-        </dependency>
+        </dependency>-->
 
         <!-- mybatis 3.2.3 -->
         <!--<dependency>
