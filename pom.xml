@@ -24,7 +24,7 @@
         <dependency>
             <groupId>org.mybatis</groupId>
             <artifactId>mybatis</artifactId>
-            <version>3.4.6</version>
+            <version>3.5.9</version>
         </dependency>
 
         <!-- MySQL JDBC 驱动依赖 驱动无法下载时，可将maven远程仓库地址切换为阿里云的 -->
